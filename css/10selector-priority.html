@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+        h1.note{
+            color: blue;
+        }
+        .error{
+            color: red;
+        }
+        #head1{
+            color:gold;
+        }
+    </style>
+</head>
+<body>
+    <h1>선택자 우선 순위</h1>
+    <p>id 선택자가 많을수록 높음</p>
+    <p>id 선택자 수가 같으면 class 선택자가 많을수록 높음</p>
+    <p>class 선택자 수가 같으면 element 선택자가 많을수록 높음</p>
+    <!-- h1*3>lorem3 -->
+    <h1 class="error">Lorem, ipsum dolor.</h1>
+    <h1 class="error note" style="color:yellow;">Cupiditate, expedita fuga?</h1>
+    <h1 class="note" id="head1">Optio, nesciunt tenetur!</h1>
+</body>
+</html>
