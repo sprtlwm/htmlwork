@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>인접한 형제 선택자</title>
+    <style>
+        #div1+p{/*p 중 #div1 바로 다음 형제들*/
+            color: blue;
+        }
+        #div2+p{
+            color: red;
+        }
+        div +p{
+            font-size: 32px
+        }
+    </style>
+</head>
+<body>
+<!-- (#div$>lorem1^p*3>lorem)*2 -->
+<div id="div1">Lorem.</div>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor magni, officia rem amet adipisci at eius eligendi porro distinctio pariatur voluptate cumque facilis, quibusdam impedit quam corrupti, ipsum sit nobis?</p>
+<p>At culpa vel suscipit ratione minus accusantium, quaerat magnam quos earum similique quasi, nihil ut? Impedit et perferendis ad maxime, sed laboriosam quos quis voluptatibus enim! Illo rerum est debitis.</p>
+<p>Ex, laborum, saepe error laudantium, atque debitis quia ratione maxime corporis molestias obcaecati incidunt quibusdam architecto. Omnis modi itaque molestiae, cum error et quam harum, impedit vero inventore rem odit!</p>
+<div id="div2">Porro?</div>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, aliquid praesentium. Sunt, dolor, rem, ipsum id repellat blanditiis dolorem libero vel neque natus cupiditate asperiores unde error. Tempore, eum pariatur.</p>
+<p>Pariatur vel corrupti dolorem quis! Officiis praesentium at quis. Minus delectus consectetur libero sequi enim optio quis repellendus eum deleniti blanditiis dolores est, quae labore, repellat at! Repudiandae, accusantium. Earum?</p>
+<p>Nesciunt optio vitae molestias molestiae hic fuga sit earum cupiditate dicta ipsa maxime culpa, quis consequatur voluptates minus! Est explicabo nihil id natus amet libero minus suscipit vero odio assumenda.</p>
+</body>
+</html>

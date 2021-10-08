@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>descendant sekector</title>
+    <style>
+        div p{/* p 요소 중 div를 조상으로 두고 있는 것들*/
+              /* div의 자손인 p들*/
+              color: blue;
+        }
+        body p{
+            text-decoration: underline;
+        }
+        body > p{
+            font-size: 32px;
+        }
+    </style>
+</head>
+<body>
+    <!-- div*2>p>lorem^^p*2>lorem -->
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, eius iste voluptas illum at culpa molestias dolorum, laudantium tempore facere doloremque aspernatur rem vero praesentium, cupiditate temporibus numquam voluptatum cumque?</p>
+    </div>
+    <div>
+        <p>Quam sed nostrum dignissimos aut ipsa beatae facilis eligendi similique maiores sequi, autem sunt esse sit. Animi veniam exercitationem facere amet, ab consectetur dolorum accusamus impedit, consequuntur odio atque quaerat!</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque delectus odio nemo reprehenderit quasi. Quas consequatur ipsa sapiente porro, libero beatae autem quidem sit cum ex consequuntur facilis dicta accusamus.</p>
+    <p>Veniam sed ex sapiente quo officiis dignissimos dolor soluta animi aut optio magni adipisci labore iure neque rem, natus distinctio velit magnam, modi aliquid facere architecto aperiam. Architecto, magnam cum?</p>
+</body>
+</html>
