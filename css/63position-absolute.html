@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <title>absolute sample</title>
+    <style>
+        .container{
+            position: relative;
+        }
+        .text{
+            position: absolute;
+            top: 0;
+            left: 30px;
+            display: none;
+        }
+        .icon:hover +.text{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- .container>.icon+.text -->
+    <div class="container">
+        <div class="icon">,,,,.....</div>
+        <div class="text">숨겨진 텍스트</div>
+    </div>
+
+</body>
+</html>

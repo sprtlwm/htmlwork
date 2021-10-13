@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <title></title>
+    <style>
+         * {
+            font-size: 24px;
+        }
+
+        .main-menu-item {
+            text-align: right;
+            background-color: black;
+            color: white;
+            width: 200px;
+            height: 75px;
+            border-right: 10px solid black;
+            position: relative;
+        }
+
+        .sub-menu {
+            background-color: black;
+            color: white;
+            display: none;
+            position: absolute;
+            top: 0px;
+            left: 210px;
+        }
+
+        .main-menu-item:hover > .sub-menu {
+            display: block;
+        }
+        .main-menu-item:hover {
+            border-right-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <!-- .main-menu>.main-menu-item*5>lorem1+.sub-menu>.sub-menu-item*5>lorem1 -->
+    <div class="main-menu">
+        <div class="main-menu-item">
+            Lorem.
+            <div class="sub-menu">
+                <div class="sub-menu-item">Lorem.</div>
+                <div class="sub-menu-item">Quidem!</div>
+                <div class="sub-menu-item">Cumque?</div>
+                <div class="sub-menu-item">Amet.</div>
+                <div class="sub-menu-item">Deserunt.</div>
+            </div>
+        </div>
+        <div class="main-menu-item">
+            Nobis?
+            <div class="sub-menu">
+                <div class="sub-menu-item">Lorem.</div>
+                <div class="sub-menu-item">Excepturi!</div>
+                <div class="sub-menu-item">Eum?</div>
+                <div class="sub-menu-item">Ullam.</div>
+                <div class="sub-menu-item">Exercitationem.</div>
+            </div>
+        </div>
+        <div class="main-menu-item">
+            Temporibus.
+            <div class="sub-menu">
+                <div class="sub-menu-item">Lorem.</div>
+                <div class="sub-menu-item">Quas!</div>
+                <div class="sub-menu-item">Molestias!</div>
+                <div class="sub-menu-item">Explicabo.</div>
+                <div class="sub-menu-item">Corporis.</div>
+            </div>
+        </div>
+        <div class="main-menu-item">
+            Voluptatem!
+            <div class="sub-menu">
+                <div class="sub-menu-item">Lorem.</div>
+                <div class="sub-menu-item">Incidunt!</div>
+                <div class="sub-menu-item">Beatae?</div>
+                <div class="sub-menu-item">Repellendus.</div>
+                <div class="sub-menu-item">Temporibus!</div>
+            </div>
+        </div>
+        <div class="main-menu-item">
+            Labore.
+            <div class="sub-menu">
+                <div class="sub-menu-item">Lorem.</div>
+                <div class="sub-menu-item">Veniam.</div>
+                <div class="sub-menu-item">Quisquam!</div>
+                <div class="sub-menu-item">Inventore?</div>
+                <div class="sub-menu-item">Id?</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
