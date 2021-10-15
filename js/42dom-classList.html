@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <title></title>
+    <style>
+        i{
+            font-size: 42px;
+        }
+    </style>
+</head>
+<body>
+    <span onclick="toggleHeart();">
+    <i class="far fa-heart"></i>
+</span>
+    
+
+<script>
+    function toggleHeart() {
+        let icon = document.querySelector("i");
+        icon.classList.toggle("far");
+        icon.classList.toggle("fas");
+ }
+</script>
+</body>
+</html>

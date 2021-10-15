@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <title>dom get element</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <!-- p.note#para$*3>lorem1 -->
+ <p class="note" id="para1">Lorem.</p>
+ <p class="note" id="para2">Reprehenderit?</p>
+ <p class="note" id="para3">Atque.</p>
+
+<script>
+    // 콘솔에 모든 p요소의 content가 출력
+    let notes = document.querySelectorAll(".note");
+    console.log(notes[0].innerHTML);
+    console.log(notes[1].innerHTML);
+    console.log(notes[2].innerHTML);
+
+    // 모든 p요소의 content를 "hello" 변경
+
+    notes[0].innerHTML = "hello";
+    notes[1].innerHTML = "hello";
+    notes[2].innerHTML = "hello";
+    
+</script>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <title>value</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+
+    <!-- input$input1+p*5>lorem1 -->
+ <input type="text" id="input1">
+ <p onclick="changVal(0);">
+     Lorem.
+ </p>
+ <p onclick="changVal(1);">
+     Distinctio?
+ </p>
+ <p onclick="changVal(2);">
+     Cum.
+ </p>
+ <p onclick="changVal(3);">
+     Veritatis!
+ </p>
+ <p onclick="changVal(4);">
+     Nulla!
+ </p>
+<script>
+function changVal(idx) {
+    
+    let val = document.querySelectorAll("p");
+    // console.log(all[idx].innerHTML);
+    document.querySelector("#input1").value = val[idx].innerHTML;
+}
+</script>
+</body>
+</html>
