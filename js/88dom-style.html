@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <title>style</title>
+    <style>
+         .hide {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button>숨기기/보여주기</button>
+    <h1>
+        Lorem, ipsum dolor.
+    </h1>
+
+    <hr>
+
+    <button id="toggle">toggle</button>
+    <h1 id="head1">
+        Lorem, ipsum dolor.
+    </h1>
+<script>
+document.querySelector("#toggle").addEventListener("click", function () {
+    document.querySelector("#head1").classList.toggle("hide");
+})
+
+    let show= true;
+document.querySelector("button").addEventListener("click",function () {
+    let head = document.querySelector("h1");
+    if(show){
+        head.style.display = "none";
+        show = false;
+    }else{
+        head.style.display = "block";
+        show = true;
+    }
+});
+</script>
+</body>
+</html>

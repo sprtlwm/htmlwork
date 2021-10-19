@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <title>style</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+<button>숨기기</button>
+<button id="show">보여주기</button>
+<h1>
+    Lorem, ipsum dolor.
+</h1>
+<script>
+document.querySelector("button").addEventListener("click", function () {
+    document.querySelector("h1").style.display = "none";
+    
+})
+document.querySelector("#show").addEventListener("click", function () {
+ document.querySelector("h1").style.display = "flex";
+})
+</script>
+</body>
+</html>

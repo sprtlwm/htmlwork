@@ -9,9 +9,22 @@
 </head>
 <body>
 <input type="text" id="input1">
+<h1 id="head1"></h1>
 <script>
 //#input1 요소에 keyup 이벤트 발생-> 값이 콘솔에 출력
 //addEventListener 메소드 활용 
+
+let inputElem = document.querySelector("#input1");
+
+inputElem.addEventListener("keyup",function () {
+   console.log(inputElem.value); 
+});
+
+document.querySelector("#input1").addEventListener("keyup", function () {
+    document.querySelector("#head1").innerHTML =
+    document.querySelector("#input1").value;
+    
+})
 </script>
 </body>
 </html>
