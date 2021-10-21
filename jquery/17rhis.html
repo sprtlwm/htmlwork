@@ -9,20 +9,22 @@
     </style>
     <script>
         $(document).ready(function(){
-            console.log("input select.");
-            $("#input1").on({
-            select:function(){
-            },
-            keyup: function(){
-                console.log("input keyup.");
-            }
+            $("input").keyup(function(){
+                let val = this.value;
 
-        });
+                document.querySelector("#result").innerHTML = val;
+            })
         });
     </script>
 </head>
 <body>
-<input type="text" id="input1">
+<input type="text">
+<br>
+<input type="text">
+<br>
+<input type="text">
+<br>
+<h1 id="result"></h1>
 <script>
 
 </script>

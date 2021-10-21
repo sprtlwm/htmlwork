@@ -9,20 +9,36 @@
     </style>
     <script>
         $(document).ready(function(){
-            console.log("input select.");
-            $("#input1").on({
-            select:function(){
-            },
-            keyup: function(){
-                console.log("input keyup.");
-            }
+            $("h1").hide();
 
-        });
+            $("#btn1").click(function () {
+                $("h1").show();
+            });
+
+            $("#btn2").click(function () {
+                $("h1").hide();
+            });
         });
     </script>
 </head>
 <body>
-<input type="text" id="input1">
+<button id="btn1">show</button>
+<button id="btn2">hide</button>
+<h1>
+    Lorem.
+</h1>
+<h1>
+    Ducimus?
+</h1>
+<h1>
+    Dolore.
+</h1>
+<h1>
+    Consequatur?
+</h1>
+<h1>
+    Ipsam.
+</h1>
 <script>
 
 </script>

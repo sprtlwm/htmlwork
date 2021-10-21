@@ -9,20 +9,25 @@
     </style>
     <script>
         $(document).ready(function(){
-            console.log("input select.");
-            $("#input1").on({
-            select:function(){
-            },
-            keyup: function(){
-                console.log("input keyup.");
-            }
-
-        });
+            $("#btn1").click(function(){
+                $("h1").fadeOut(1000);
+            });
+            $("#btn2").click(function(){
+                $("h1").fadeIn(500);
+            });
+            $("#btn3").click(function(){
+                $("h1").fadeToggle("fast");
+            });
         });
     </script>
 </head>
 <body>
-<input type="text" id="input1">
+<button id="btn1">fadeOut</button>
+<button id="btn2">fadeIn</button>
+<button id="btn3">fadeToggle</button>
+<h1>
+    Lorem, ipsum dolor.
+</h1>
 <script>
 
 </script>
