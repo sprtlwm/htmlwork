@@ -9,18 +9,21 @@
     </style>
     <script>
         $(document).ready(function(){
-            $("#container").prepend("<h1>hello</h1>");
-            $("#container").prepend("<h1>javascript</h1>");
-            $("#container").prepend("<h1>spring</h1>");
-
-            let ne = $("<h1 />");
-            ne.text("css");
-            $("#container").prepend(ne);
+            $("#btn1").click(function(){
+                $("#list1").after(`<li>${Math.random()}</li>`);
+            });
+            $("#btn2").click(function(){
+                $("#list1").append(`<li>${Math.random()}</li>`);
+            });
         });
     </script>
 </head>
 <body>
-<div id="container"></div>
+<button id="btn1">after</button>
+<button id="btn2">append</button>
+<ul id="list1">
+    <li>hello</li>
+</ul>
 <script>
 
 </script>

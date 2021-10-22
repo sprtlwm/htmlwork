@@ -12,7 +12,7 @@
             $("#btn1").click(function(){
                 $("#input1").text(function(){
                     let str = $(this).val();
-                $("#list1").append("<li />",str);
+                $("#list1").append(`<li>${str}</li>`);
                 });
             });
         });
