@@ -12,8 +12,12 @@
             $("#btn1").click(function(){
                 $("#input1").text(function(){
                     let str = $(this).val();
+                    let newli= `<li>${str}</li>`;
                 $("#list1").append(`<li>${str}</li>`);
-                });
+                         newli.click(function(){
+                                $(this).remove();     
+                         });                               
+            });
             });
         });
     </script>

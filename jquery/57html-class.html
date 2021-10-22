@@ -9,26 +9,17 @@
     </style>
     <script>
         $(document).ready(function(){
-            $("#btn1").click(function(){
-                let str = $("#input1").val();
-                
-                let li = $("<li />").text(str);
-                 
-                li.click(function(){
-                    $(this).remove();
-                })
+            $("i").click(function(){
+                $(this).toggleClass("far fa-heart").toggleClass("fas fa-heart");
 
-                $("#list1").append(li);
-                });
-            });     
+            });
+        });
     </script>
 </head>
 <body>
-    <input type="text" id="input1">
-    <button id="btn1">+</button>
-    <ul id="list1">
-        
-    </ul>
+    <i class="fas fa-heart"></i>
+    
+    <i class="far fa-heart"></i>
 <script>
 
 </script>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title></title>
+    <style>
+        
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("#input1").keyup(function(){
+                let lists = $("#list1 li");
+                
+                for(let i =0; i<lists.length; i++){
+                    let text = lists.eq(i).text();
+                    if(text.toLowerCase().includes($(this).val())){
+                        lists.eq(i).show();
+                    }else{
+                        lists.eq(i).hide();
+                    }
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+<input type="text" id="input1">
+<ul id="list1">
+    <li>
+        Lorem ipsum dolor sit amet.
+    </li>
+    <li>
+        Totam nulla eligendi veniam porro.
+    </li>
+    <li>
+        Amet officia molestias facere ipsa.
+    </li>
+    <li>
+        Adipisci aliquid vitae autem voluptas.
+    </li>
+    <li>
+        Fuga doloremque hic commodi repellendus.
+    </li>
+    <li>
+        Animi laudantium libero quas. Porro.
+    </li>
+    <li>
+        Exercitationem qui enim dignissimos ducimus?
+    </li>
+    <li>
+        Cupiditate corporis explicabo illum nulla.
+    </li>
+    <li>
+        Asperiores voluptate esse quibusdam in?
+    </li>
+    <li>
+        Velit ad itaque ea eaque.
+    </li>
+    <li>
+        Perspiciatis expedita culpa est pariatur.
+    </li>
+    <li>
+        Voluptates cupiditate explicabo consequuntur perspiciatis.
+    </li>
+    <li>
+        Consequuntur suscipit mollitia sequi corrupti.
+    </li>
+    <li>
+        Eligendi quas architecto nemo molestiae.
+    </li>
+    <li>
+        Corporis reiciendis harum fuga saepe.
+    </li>
+    <li>
+        Iure, inventore. Numquam, ea nobis.
+    </li>
+    <li>
+        Iure natus assumenda fugit doloribus.
+    </li>
+    <li>
+        Quidem fugit blanditiis maxime repudiandae.
+    </li>
+    <li>
+        Deleniti iure corporis aspernatur veritatis?
+    </li>
+    <li>
+        Hic alias deserunt architecto autem!
+    </li>
+    <li>
+        Voluptate distinctio veritatis ipsam voluptas.
+    </li>
+    <li>
+        Atque maiores itaque et culpa.
+    </li>
+    <li>
+        Et magni cumque cum libero!
+    </li>
+    <li>
+        Aliquid beatae sed quis doloremque.
+    </li>
+    <li>
+        Ea consequuntur aut cupiditate. Hic.
+    </li>
+    <li>
+        Voluptatibus, dolor labore! Debitis, eligendi?
+    </li>
+    <li>
+        Tenetur ex quis natus eligendi.
+    </li>
+    <li>
+        Molestias facilis voluptatibus maiores rem.
+    </li>
+    <li>
+        Ratione harum quia natus quisquam?
+    </li>
+    <li>
+        Sed tenetur alias aliquid expedita.
+    </li>
+</ul>
+<script>
+
+</script>
+</body>
+</html>

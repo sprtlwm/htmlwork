@@ -9,26 +9,27 @@
     </style>
     <script>
         $(document).ready(function(){
-            $("#btn1").click(function(){
-                let str = $("#input1").val();
+            $("#btn1").click(function() {
+                let text = $("#input1").val();
+                let trashBtn = $("<button />").append(`<i class="fas fa-trash-alt"></i>`);
                 
-                let li = $("<li />").text(str);
-                 
-                li.click(function(){
-                    $(this).remove();
-                })
-
-                $("#list1").append(li);
+                trashBtn.click(function() {
+                    $(this).parent().remove();
                 });
-            });     
+
+                let newli = $("<li />").html(text).append(trashBtn);
+                $("#list1").append(newli);
+            });
+           
+            
+            
+        });
     </script>
 </head>
 <body>
     <input type="text" id="input1">
     <button id="btn1">+</button>
-    <ul id="list1">
-        
-    </ul>
+    <ul id="list1"></ul>
 <script>
 
 </script>

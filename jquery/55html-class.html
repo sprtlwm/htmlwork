@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>remove class</title>
+    <style>
+        .blue{
+            background-color: blue;
+            color: white;
+        }
+
+        .red-border{
+            border: 10px dotted red;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("h1:nth-child(1)").removeClass("blue");
+            $("h1:nth-child(2)").removeClass("blue red-border");
+            $("h1:nth-child(3)").removeClass("blue");
+            $("h1:nth-child(3)").removeClass("red-border");
+
+            $("h1:nth-child(4)").removeClass("blue").removeClass("red-border");
+        });
+    </script>
+</head>
+<body>
+<h1 class="blue red-border">
+    Lorem.
+</h1>
+<h1 class="blue red-border">
+    Similique!
+</h1>
+<h1 class="blue red-border">
+    Accusantium!
+</h1>
+<h1 class="blue red-border">
+    Expedita.
+</h1>
+<h1 class="blue red-border">
+    Doloribus.
+</h1>
+<script>
+
+</script>
+</body>
+</html>
